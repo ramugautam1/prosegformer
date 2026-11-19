@@ -1,0 +1,17 @@
+{
+ "protein": "E-cadherin, E-cadherin-GFP, Drosophila embryo",
+ "spacing_um": [
+  0.5,
+  0.124,
+  0.124
+ ],
+ "frames": "5 single time points, each a different field of view; binary masks drawn in ImageJ; labels are their 26-connected components",
+ "folds": "3-fold cross-validation over the stacks: fold k tests one chunk, validates on one stack of the next chunk and trains on the rest",
+ "source_names": {
+  "ecad1": "pre-bleach_jubcherry-jubcherry_shg,ubiGFP-cyo-05_merged-1-1",
+  "ecad2": "pre-bleach_jubcherry-jubcherry_shg,ubiGFP-cyo-05_merged-1-2",
+  "ecad3": "pre-bleach_jubcherry-jubcherry_shg,ubiGFP-cyo-05_merged-1-3",
+  "ecad4": "pre-bleach_jubcherry-jubcherry_shg,ubiGFP-cyo-05_merged-1-4",
+  "ecad5": "pre-bleach_jubcherry-jubcherry_shg,ubiGFP-cyo-05_merged-1-5"
+ }
+}

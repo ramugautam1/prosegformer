@@ -1,0 +1,14 @@
+# fine-tuning the Bazooka model on the Gish stacks, one fold at a time (--fold 0, 1, 2); frame output only
+data: data/gish
+init: checkpoints/prosegformer.pt
+init_heads: true
+optim:
+  steps: 1500
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  warmup: 200
+  ema: 0.0
+  frame_batch: 8
+eval:
+  every: 250
+  thresholds: [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]

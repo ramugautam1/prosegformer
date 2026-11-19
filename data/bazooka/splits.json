@@ -1,0 +1,56 @@
+{
+ "train": {
+  "frames": [
+   "frame0",
+   "frame1",
+   "frame2",
+   "frame3",
+   "frame4",
+   "frame5"
+  ],
+  "crops": [
+   "Crop01",
+   "Crop05",
+   "Crop07",
+   "Crop08",
+   "Crop09",
+   "Crop11",
+   "Crop12",
+   "Crop13",
+   "Crop14",
+   "Crop15",
+   "Crop16",
+   "Crop18",
+   "Crop20",
+   "Crop23",
+   "Crop24",
+   "Crop28"
+  ]
+ },
+ "val": {
+  "frames": [
+   "frame6"
+  ],
+  "crops": [
+   "Crop02",
+   "Crop03",
+   "Crop10",
+   "Crop26"
+  ]
+ },
+ "test": {
+  "frames": [
+   "frame7"
+  ],
+  "crops": [
+   "Crop04",
+   "Crop06",
+   "Crop17",
+   "Crop19",
+   "Crop21",
+   "Crop22",
+   "Crop25",
+   "Crop27"
+  ]
+ }
+}

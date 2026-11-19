@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prosegformer"
+version = "1.0.0"
+description = "Full-resolution transformer segmentation of protein puncta in 3D live microscopy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ProSegFormer authors" }]
+keywords = ["segmentation", "microscopy", "transformer", "self-supervised learning", "protein puncta"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "torch>=2.1",
+    "tifffile>=2023.1",
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Repository = "https://github.com/ramugautam1/prosegformer"
+
+[project.optional-dependencies]
+nifti = ["nibabel>=5.0"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+prosegformer-segment = "prosegformer.segment:main"
+prosegformer-train = "prosegformer.train:main"
+prosegformer-pretrain = "prosegformer.pretrain:main"
+prosegformer-evaluate = "prosegformer.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E731", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: trains a tiny model and runs the released model and the command-line tools on a CPU (about 30 s)"]

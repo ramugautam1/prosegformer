@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use ProSegFormer or its data, please cite it as below."
+title: "ProSegFormer: Full-Resolution Transformer Segmentation of Protein Puncta in 3D Live Microscopy"
+type: software
+authors:
+  - name: "ProSegFormer authors"
+repository-code: "https://github.com/ramugautam1/prosegformer"
+version: 1.0.0
+license: MIT
+keywords:
+  - image segmentation
+  - protein puncta
+  - fluorescence microscopy
+  - self-supervised learning

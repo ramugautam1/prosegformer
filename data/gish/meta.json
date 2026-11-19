@@ -1,0 +1,19 @@
+{
+ "protein": "Gilgamesh (Gish), Gish-GFP, Drosophila embryo",
+ "spacing_um": [
+  0.5,
+  0.132,
+  0.132
+ ],
+ "frames": "7 single time points, each a different field of view; binary masks drawn in ImageJ; labels are their 26-connected components",
+ "folds": "3-fold cross-validation over the stacks: fold k tests one chunk, validates on one stack of the next chunk and trains on the rest",
+ "source_names": {
+  "gish1": "GishGT20261",
+  "gish2": "GishGT20262",
+  "gish3": "GishGT20263",
+  "gish4": "GishGT20265",
+  "gish5": "GishGT20266",
+  "gish6": "GishGT20267",
+  "gish7": "GishGT20268"
+ }
+}

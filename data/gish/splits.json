@@ -1,0 +1,49 @@
+{
+ "folds": [
+  {
+   "train": [
+    "gish5",
+    "gish6",
+    "gish7"
+   ],
+   "val": [
+    "gish4"
+   ],
+   "test": [
+    "gish1",
+    "gish2",
+    "gish3"
+   ]
+  },
+  {
+   "train": [
+    "gish1",
+    "gish2",
+    "gish3",
+    "gish7"
+   ],
+   "val": [
+    "gish6"
+   ],
+   "test": [
+    "gish4",
+    "gish5"
+   ]
+  },
+  {
+   "train": [
+    "gish2",
+    "gish3",
+    "gish4",
+    "gish5"
+   ],
+   "val": [
+    "gish1"
+   ],
+   "test": [
+    "gish6",
+    "gish7"
+   ]
+  }
+ ]
+}

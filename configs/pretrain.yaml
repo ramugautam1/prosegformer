@@ -1,0 +1,17 @@
+# masked-image pretraining (checkpoints/prosegformer_pretrained.pt: 30,000 steps on six Bazooka movies)
+model:
+  dims: [32, 64, 128]
+  depths: [2, 2, 2]
+  heads: [2, 4, 8]
+  windows: [8, 8, 0]
+  attention: [1, 1, 1]
+optim:
+  steps: 30000
+  batch: 8
+  lr: 1.0e-3
+  weight_decay: 0.05
+  warmup: 1000
+mask:
+  block: [2, 4, 4]
+  ratio: 0.5
+  bright_weight: 4.0

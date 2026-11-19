@@ -1,0 +1,20 @@
+{
+ "protein": "Bazooka (Par-3), Baz-GFP, Drosophila embryo",
+ "spacing_um": [
+  0.5,
+  0.124,
+  0.124
+ ],
+ "frames": "8 single time points of one movie, 13 x 320 x 512 voxels; binary masks of whole fields drawn in ImageJ; labels are their 26-connected components",
+ "crops": "28 tracking crops of 13 x 32 x 32 voxels over 40 frames (7.5 s apart) from another embryo; instance masks drawn one punctum at a time (the ProTrackFormer Bazooka benchmark)",
+ "frame_names": {
+  "frame0": "seg0",
+  "frame1": "seg1",
+  "frame2": "seg2",
+  "frame3": "seg3",
+  "frame4": "seg4",
+  "frame5": "seg5",
+  "frame6": "seg6",
+  "frame7": "seg7"
+ }
+}

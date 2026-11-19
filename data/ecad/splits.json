@@ -1,0 +1,43 @@
+{
+ "folds": [
+  {
+   "train": [
+    "ecad4",
+    "ecad5"
+   ],
+   "val": [
+    "ecad3"
+   ],
+   "test": [
+    "ecad1",
+    "ecad2"
+   ]
+  },
+  {
+   "train": [
+    "ecad1",
+    "ecad2"
+   ],
+   "val": [
+    "ecad5"
+   ],
+   "test": [
+    "ecad3",
+    "ecad4"
+   ]
+  },
+  {
+   "train": [
+    "ecad2",
+    "ecad3",
+    "ecad4"
+   ],
+   "val": [
+    "ecad1"
+   ],
+   "test": [
+    "ecad5"
+   ]
+  }
+ ]
+}

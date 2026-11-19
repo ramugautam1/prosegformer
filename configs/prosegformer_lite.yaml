@@ -1,0 +1,21 @@
+# ProSegFormer-Lite: the same network without self-attention (checkpoints/prosegformer_lite.pt: seed 12)
+data: data/bazooka
+init: checkpoints/prosegformer_lite_pretrained.pt
+model:
+  dims: [32, 64, 128]
+  depths: [2, 2, 2]
+  heads: [2, 4, 8]
+  windows: [8, 8, 0]
+  attention: [0, 0, 0]
+  outputs: 2
+optim:
+  steps: 10000
+  lr: 1.0e-3
+  weight_decay: 0.05
+  warmup: 500
+  ema: 0.999
+  frame_batch: 8
+  crop_batch: 16
+eval:
+  every: 1000
+  mirror: true
